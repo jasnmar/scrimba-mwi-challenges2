@@ -32,3 +32,19 @@ function rps() {
 }
 
 console.log(rps())
+
+
+let fighters = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
+
+let stageEl = document.getElementById("stage")
+let fightButton = document.getElementById("fightButton")
+
+fightButton.addEventListener("click", function() {
+    // Challenge:
+    // When the user clicks on the "Pick Fighters" button, pick two random 
+    // emoji fighters and display them as i.e. "🦀 vs 🐢" in the "stage" <div>.
+    const fighter1Number = Math.floor( Math.random() * fighters.length);
+    const fighter2Number = Math.floor( Math.random() * fighters.length);
+    stageEl.textContent = fighters[fighter1Number] + " vs " + fighters[fighter2Number]
+      
+})
