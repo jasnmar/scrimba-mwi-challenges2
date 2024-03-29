@@ -1,18 +1,2 @@
-let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"]
-let appleShelf = document.getElementById("apple-shelf")
-let orangeShelf = document.getElementById("orange-shelf")
-
-// Create a function that puts the apples onto the appleShelf
-// and the oranges onto the orangeShelf. Use a for loop,
-// a conditional statement, and the textContent property.
-
-function sort() {
-    for (let i = 0; i< fruit.length; i++) {
-        if (fruit[i]==="🍎") {
-            appleShelf.textContent += fruit[i]
-        } else {
-            orangeShelf.textContent += fruit[i]
-        }
-    }
-}
-sort();
+const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
+"/"];
